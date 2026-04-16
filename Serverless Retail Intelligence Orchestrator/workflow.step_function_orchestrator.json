@@ -1,0 +1,13 @@
+{
+  "StartAt": "IngestOrders",
+  "States": {
+    "IngestOrders": {
+      "Type": "Task",
+      "Next": "SyncInventory"
+    },
+    "SyncInventory": {
+      "Type": "Task",
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "StartAt": "ProcessOrders",
+  "States": {
+    "ProcessOrders": {
+      "Type": "Task",
+      "Next": "UpdateInventory"
+    },
+    "UpdateInventory": {
+      "Type": "Task",
+      "Next": "TriggerPricing"
+    },
+    "TriggerPricing": {
+      "Type": "Task",
+      "End": true
+    }
+  }
+}
