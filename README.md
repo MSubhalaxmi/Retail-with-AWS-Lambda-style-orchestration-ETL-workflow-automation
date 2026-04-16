@@ -20,9 +20,11 @@
                │
      ┌─────────┼─────────┐
      │                   │
-Inventory Sync      Data Enrichment
+Inventory Sync     Data Enrichment
+
      │                   │
  External APIs        Processed Data
+ 
      │                   │
      
      └──────────► Storage Layer
