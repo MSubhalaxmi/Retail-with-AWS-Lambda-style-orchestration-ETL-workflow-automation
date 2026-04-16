@@ -2,7 +2,7 @@
 
 **Highlights**
 
--Event-driven Lambda architecture
+-Event-driven Lambda architecture.
 -Workflow orchestration via Step Functions
 -Automated ETL + enrichment pipeline
 -Secure RBAC authorization
