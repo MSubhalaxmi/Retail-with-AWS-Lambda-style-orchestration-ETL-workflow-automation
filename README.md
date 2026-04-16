@@ -12,26 +12,26 @@ Unlike traditional monolithic systems, this architecture follows a hybrid approa
 
 The system uses asynchronous Lambda-style handlers to process bulk order events concurrently. This allows it to handle spikes in traffic during peak retail events (such as flash sales or seasonal demand) without performance degradation.
 
-Parallel execution using asyncio
-Non-blocking processing of large order batches
-Optimised for horizontal scalability
+- Parallel execution using asyncio
+- Non-blocking processing of large order batches
+- Optimised for horizontal scalability
 
 **Real-Time Inventory & Pricing Updates**
 
 A Redis Pub/Sub mechanism is used to broadcast inventory and pricing changes instantly across the system.
 
-Real-time event propagation
-Immediate stock updates across services
-Enables live synchronization with frontend clients
-Reduces database load by avoiding repeated polling
+- Real-time event propagation
+- Immediate stock updates across services
+- Enables live synchronization with frontend clients
+- Reduces database load by avoiding repeated polling
 
 **Intelligent Pricing Engine**
 
 The pricing service dynamically adjusts product prices based on:
 
-Inventory levels (low stock triggers price increase)
-Demand patterns (high demand drives surge pricing)
-Configurable business rules
+- Inventory levels (low stock triggers price increase)
+- Demand patterns (high demand drives surge pricing)
+- Configurable business rules
 
 This ensures optimal pricing strategies that balance revenue generation and inventory turnover.
 
@@ -39,9 +39,9 @@ This ensures optimal pricing strategies that balance revenue generation and inve
 
 A dedicated inventory service encapsulates core business logic related to stock management:
 
-Real-time stock deduction during order processing
-Threshold-based low stock detection
-Isolation of inventory logic for maintainability
+- Real-time stock deduction during order processing
+- Threshold-based low stock detection
+- Isolation of inventory logic for maintainability
 
 This separation allows independent scaling and reduces system coupling.
 
@@ -49,10 +49,10 @@ This separation allows independent scaling and reduces system coupling.
 
 Internal services communicate through a lightweight service mesh abstraction using HTTP-based APIs.
 
-Decoupled service interaction
-Independent deployment and scaling
-Clear separation of responsibilities between services
-Easy integration with future services (recommendation engine, analytics, etc.)
+- Decoupled service interaction
+- Independent deployment and scaling
+- Clear separation of responsibilities between services
+- Easy integration with future services (recommendation engine, analytics, etc.)
 
 ---
 
