@@ -60,24 +60,24 @@ Easy integration with future services (recommendation engine, analytics, etc.)
 
 The system uses a Step Function-style orchestration model to coordinate workflows:
 
-Order ingestion
-Inventory update
-Pricing recalculation
+- Order ingestion
+- Inventory update
+- Pricing recalculation
 
 This ensures:
 
-Clear execution flow
-Fault isolation between stages
-Easy extensibility for additional steps (notifications, analytics, fraud checks)
+- Clear execution flow
+- Fault isolation between stages
+- Easy extensibility for additional steps (notifications, analytics, fraud checks)
 
 **CI/CD with Zero-Downtime Deployment**
 
 The deployment pipeline is designed using a blue-green deployment strategy, ensuring:
 
-Zero downtime releases
-Safe rollback in case of failures
-Environment isolation (staging vs production)
-Automated build and deployment using GitHub Actions
+- Zero downtime releases
+- Safe rollback in case of failures
+- Environment isolation (staging vs production)
+- Automated build and deployment using GitHub Actions
 
 **Architecture Principles Followed**
 
@@ -103,19 +103,19 @@ Inventory, pricing, and order processing are handled as independent domains, imp
 
 **Tech Stack**
 
-Python (Asyncio for concurrency)
-Redis (Pub/Sub + caching layer)
-AWS Lambda (conceptual implementation)
-Step Functions (workflow orchestration)
-REST APIs for service communication
-Docker (container-ready services)
-GitHub Actions (CI/CD automation)
+- Python (Asyncio for concurrency)
+- Redis (Pub/Sub + caching layer)
+- AWS Lambda (conceptual implementation)
+- Step Functions (workflow orchestration)
+- REST APIs for service communication
+- Docker (container-ready services)
+- GitHub Actions (CI/CD automation)
 
 **Testing & Reliability Approach**
 
 The system is designed with reliability in mind and can be extended with:
 
-Unit testing for business logic (PyTest)
-Integration testing between services
-Load testing for async ingestion flows
-Failure simulation for resilience validation
+- Unit testing for business logic (PyTest)
+- Integration testing between services
+- Load testing for async ingestion flows
+- Failure simulation for resilience validation
