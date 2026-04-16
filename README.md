@@ -1,3 +1,5 @@
+**1. Serverless Event-Driven Retail Core**
+
 **Project Overview**
 
 This project represents a production-grade, event-driven retail backend system designed to handle high-volume e-commerce operations. It focuses on building a scalable and resilient architecture that supports real-time inventory updates, dynamic pricing adjustments, and distributed service communication.
@@ -56,7 +58,7 @@ Internal services communicate through a lightweight service mesh abstraction usi
 
 ---
 
-**Serverless Workflow Orchestration**
+**2. Serverless Workflow Orchestration**
 
 The system uses a Step Function-style orchestration model to coordinate workflows:
 
