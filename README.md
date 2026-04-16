@@ -1,2 +1,9 @@
-# Retail-with-AWS-Lambda-style-orchestration-ETL-workflow-automation
-Serverless Retail Intelligence Orchestrator
+**Serverless Retail Intelligence Orchestrator**
+
+**Highlights**
+
+-Event-driven Lambda architecture
+-Workflow orchestration via Step Functions
+-Automated ETL + enrichment pipeline
+-Secure RBAC authorization
+-External supplier API integration
